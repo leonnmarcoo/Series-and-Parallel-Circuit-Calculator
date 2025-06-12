@@ -70,17 +70,17 @@
             <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="iOneLabel" layoutX="394.0" layoutY="295.0" text="I₁ =" textFill="#2c63ee">
+      <Label fx:id="iOneLabel" layoutX="394.0" layoutY="295.0" text="I₁ =" textFill="WHITE">
          <font>
             <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="iTwoLabel" layoutX="530.0" layoutY="295.0" text="I₂ =" textFill="#2c63ee">
+      <Label fx:id="iTwoLabel" layoutX="530.0" layoutY="295.0" text="I₂ =" textFill="WHITE">
          <font>
             <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="iThreeLabel" layoutX="671.0" layoutY="295.0" text="I₃ =" textFill="#2c63ee">
+      <Label fx:id="iThreeLabel" layoutX="671.0" layoutY="295.0" text="I₃ =" textFill="WHITE">
          <font>
             <Font name="Poppins Bold" size="16.0" />
          </font>
