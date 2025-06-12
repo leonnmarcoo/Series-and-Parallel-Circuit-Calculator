@@ -7,10 +7,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #171717;" vbarPolicy="NEVER">
+      <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="1000.0" style="-fx-background: Transparent; -fx-background-color: #171717;" vbarPolicy="NEVER">
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1200.0" prefWidth="998.0" style="-fx-background-color: Transparent;">
                <children>
@@ -19,31 +18,31 @@
                         <Image url="@../Images/Landing%20Page.png" />
                      </image>
                   </ImageView>
-                  <ScrollPane hbarPolicy="NEVER" layoutY="364.0" prefHeight="40.0" prefWidth="1000.0" style="-fx-background-color: Transparent; -fx-background-insets: 0; -fx-padding: 0;" vbarPolicy="NEVER">
+                  <ScrollPane hbarPolicy="NEVER" layoutY="334.0" prefHeight="100.0" prefWidth="1000.0" style="-fx-background-color: Transparent; -fx-background-insets: 0; -fx-padding: 0;" vbarPolicy="NEVER">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="40.0" prefWidth="1170.0" style="-fx-background-color: Transparent;">
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="1170.0" style="-fx-background-color: Transparent;">
                            <children>
-                              <Button layoutX="20.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" text="Leon Marco A. Devela" textFill="WHITE">
+                              <Button layoutX="20.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="215.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Leon Marco A. Devela" textFill="WHITE">
                                  <font>
                                     <Font name="Poppins Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="250.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" text="John Mikael D. Evangelista" textFill="WHITE">
+                              <Button layoutX="250.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="259.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="John Mikael D. Evangelista" textFill="WHITE">
                                  <font>
                                     <Font name="Poppins Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="524.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" text="Jersey Mae D. Marisga" textFill="WHITE">
+                              <Button layoutX="524.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="225.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Jersey Mae D. Marisga" textFill="WHITE">
                                  <font>
                                     <Font name="Poppins Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="764.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" text="Jared L. Pilapil" textFill="WHITE">
+                              <Button layoutX="764.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="158.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Jared L. Pilapil" textFill="WHITE">
                                  <font>
                                     <Font name="Poppins Bold" size="16.0" />
                                  </font>
                               </Button>
-                              <Button layoutX="937.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" text="Tristan Jay M. Sevilla" textFill="WHITE">
+                              <Button layoutX="937.0" layoutY="30.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Tristan Jay M. Sevilla" textFill="WHITE">
                                  <font>
                                     <Font name="Poppins Bold" size="16.0" />
                                  </font>
@@ -52,7 +51,17 @@
                         </AnchorPane>
                     </content>
                   </ScrollPane>
-                  <Button layoutX="393.0" layoutY="1114.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" text="Mr. Raul B. Borlungay" textFill="WHITE">
+                  <Button layoutX="120.0" layoutY="552.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="330.0" style="-fx-background-color: Transparent; -fx-background-radius: 18;" stylesheets="@../CSS/buttonStyle.CSS" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="550.0" layoutY="552.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="330.0" style="-fx-background-color: Transparent; -fx-background-radius: 18;" stylesheets="@../CSS/buttonStyle.CSS" textFill="WHITE">
+                     <font>
+                        <Font name="Poppins Bold" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="393.0" layoutY="1114.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="213.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Mr. Raul B. Borlungay" textFill="WHITE">
                      <font>
                         <Font name="Poppins Bold" size="16.0" />
                      </font>
