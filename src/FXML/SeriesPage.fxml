@@ -8,20 +8,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SeriesPageController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="1000.0">
          <image>
             <Image url="@../Images/Series%20Page.png" />
          </image>
       </ImageView>
-      <Button fx:id="seriesCircuitButton" layoutX="90.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Series Circuit" textFill="WHITE">
+      <Button fx:id="seriesButton" layoutX="90.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Series Circuit" textFill="WHITE">
          <font>
             <Font name="Poppins Bold" size="16.0" />
          </font>
       </Button>
-      <Button fx:id="parallelCircuitButton" layoutX="510.0" layoutY="40.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #373737; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Parallel Circuit" textFill="WHITE">
+      <Button fx:id="parallelButton" layoutX="510.0" layoutY="40.0" mnemonicParsing="false" onAction="#parallelButtonHandler" prefHeight="40.0" prefWidth="400.0" style="-fx-background-color: #373737; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="Parallel Circuit" textFill="WHITE">
          <font>
             <Font name="Poppins Bold" size="16.0" />
          </font>
@@ -61,44 +60,44 @@
             <Font name="Poppins Bold" size="20.0" />
          </font>
       </Label>
-      <Label fx:id="rTotalLabel" layoutX="224.0" layoutY="258.0" text="R(t) =" textFill="WHITE">
+      <Label fx:id="rTotalLabel" layoutX="224.0" layoutY="262.0" text="R(t) =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="rTotalLabel" layoutX="466.0" layoutY="241.0" text="I₁ =" textFill="WHITE">
+      <Label fx:id="iOneLabel" layoutX="466.0" layoutY="245.0" text="I₁ =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
       <Label fx:id="iTwoLabel" layoutX="560.0" layoutY="289.0" text="I₂ =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
       <Label fx:id="iThreeLabel" layoutX="454.0" layoutY="324.0" text="I₃ =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="iTotalLabel" layoutX="224.0" layoutY="338.0" text="I(t) =" textFill="WHITE">
+      <Label fx:id="iTotalLabel" layoutX="224.0" layoutY="342.0" text="I(t) =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="vOneLabel" layoutX="416.0" layoutY="139.0" text="V₁ =" textFill="WHITE">
+      <Label fx:id="vOneLabel" layoutX="416.0" layoutY="143.0" text="V₁ =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="vTwoLabel" layoutX="712.0" layoutY="310.0" text="V₂ =" textFill="WHITE">
+      <Label fx:id="vTwoLabel" layoutX="712.0" layoutY="314.0" text="V₂ =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
-      <Label fx:id="vThreeLabel" layoutX="416.0" layoutY="432.0" text="V₃ =" textFill="WHITE">
+      <Label fx:id="vThreeLabel" layoutX="416.0" layoutY="436.0" text="V₃ =" textFill="WHITE">
          <font>
-            <Font name="Poppins Bold" size="20.0" />
+            <Font name="Poppins Bold" size="16.0" />
          </font>
       </Label>
       <Label fx:id="vTotalLabel" layoutX="163.0" layoutY="298.0" text="V(t) =" textFill="WHITE">
@@ -111,11 +110,6 @@
             <Font name="Poppins Bold" size="20.0" />
          </font>
       </Label>
-      <Button fx:id="calculateButton" layoutX="440.0" layoutY="520.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="CALCULATE" textFill="WHITE">
-         <font>
-            <Font name="Poppins Bold" size="16.0" />
-         </font>
-      </Button>
       <Label layoutX="610.0" layoutY="141.0" text="Ω" textFill="WHITE">
          <font>
             <Font name="Poppins Bold" size="20.0" />
@@ -131,5 +125,10 @@
             <Font name="Poppins Bold" size="20.0" />
          </font>
       </Label>
+      <Button fx:id="calculateButton" layoutX="440.0" layoutY="520.0" mnemonicParsing="false" onAction="#calculateButtonHandler" prefHeight="40.0" prefWidth="120.0" style="-fx-background-color: #2C63EE; -fx-background-radius: 12;" stylesheets="@../CSS/buttonStyle.CSS" text="CALCULATE" textFill="WHITE">
+         <font>
+            <Font name="Poppins Bold" size="16.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

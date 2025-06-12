@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: Transparent;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LandingPageController">
    <children>
       <ScrollPane hbarPolicy="NEVER" prefHeight="600.0" prefWidth="1000.0" style="-fx-background: Transparent; -fx-background-color: #171717;" vbarPolicy="NEVER">
         <content>
@@ -51,12 +51,12 @@
                         </AnchorPane>
                     </content>
                   </ScrollPane>
-                  <Button layoutX="120.0" layoutY="552.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="330.0" style="-fx-background-color: Transparent; -fx-background-radius: 18;" stylesheets="@../CSS/buttonStyle.CSS" textFill="WHITE">
+                  <Button fx:id="seriesButton" layoutX="120.0" layoutY="552.0" mnemonicParsing="false" onAction="#seriesButtonHandler" prefHeight="250.0" prefWidth="330.0" style="-fx-background-color: Transparent; -fx-background-radius: 18;" stylesheets="@../CSS/buttonStyle.CSS" textFill="WHITE">
                      <font>
                         <Font name="Poppins Bold" size="16.0" />
                      </font>
                   </Button>
-                  <Button layoutX="550.0" layoutY="552.0" mnemonicParsing="false" prefHeight="250.0" prefWidth="330.0" style="-fx-background-color: Transparent; -fx-background-radius: 18;" stylesheets="@../CSS/buttonStyle.CSS" textFill="WHITE">
+                  <Button fx:id="parallelButton" layoutX="550.0" layoutY="552.0" mnemonicParsing="false" onAction="#parallelButtonHandler" prefHeight="250.0" prefWidth="330.0" style="-fx-background-color: Transparent; -fx-background-radius: 18;" stylesheets="@../CSS/buttonStyle.CSS" textFill="WHITE">
                      <font>
                         <Font name="Poppins Bold" size="16.0" />
                      </font>
