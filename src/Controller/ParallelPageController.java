@@ -102,31 +102,24 @@ public class ParallelPageController {
     @FXML
     private void calculateButtonHandler(ActionEvent event) {
         try {
-            // Get input values from text fields
             double r1 = Double.parseDouble(rOneTextField.getText());
             double r2 = Double.parseDouble(rTwoTextField.getText());
             double r3 = Double.parseDouble(rThreeTextField.getText());
             double vTotal = Double.parseDouble(vTotalTextField.getText());
             
-            // Calculate total resistance for parallel circuit
-            // Formula: 1/rTotal = 1/r1 + 1/r2 + 1/r3
             double reciprocalSum = (1.0 / r1) + (1.0 / r2) + (1.0 / r3);
             double rTotal = 1.0 / reciprocalSum;
             
-            // In parallel circuit, voltage is same across all resistors
             double vOne = vTotal;
             double vTwo = vTotal;
             double vThree = vTotal;
             
-            // Calculate current through each resistor using Ohm's law (I = V / R)
             double iOne = vTotal / r1;
             double iTwo = vTotal / r2;
             double iThree = vTotal / r3;
             
-            // Calculate total current (sum of all currents in parallel)
             double iTotal = iOne + iTwo + iThree;
             
-            // Format and set the calculated values to their respective labels
             rTotalLabel.setText(String.format("R(t) = %.2f Ω", rTotal));
             iTotalLabel.setText(String.format("I(t) = %.2f A", iTotal));
             
@@ -139,14 +132,12 @@ public class ParallelPageController {
             iThreeLabel.setText(String.format("I₃ = %.2f A", iThree));
             
         } catch (NumberFormatException e) {
-            // Handle invalid input with alert dialog
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Invalid Input");
             alert.setHeaderText("Input Error");
             alert.setContentText("Please enter valid numbers for all fields.");
             alert.showAndWait();
         } catch (ArithmeticException e) {
-            // Handle division by zero with alert dialog
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Calculation Error");
             alert.setHeaderText("Division by Zero");
